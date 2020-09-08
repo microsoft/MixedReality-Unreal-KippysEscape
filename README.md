@@ -1,6 +1,6 @@
 # Kippy's Escape
 
-Kippy the robot wakes up to find itself stranded on an island… and it's up to you to solve a series of puzzles and help it find a path to its rocket ship! Kippy's Escape is an open source sample app for HoloLens 2, built with Unreal Engine and Mixed Reality [UX Tools for Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal). To learn more about the making of Kippy's Escape, check out this [article](https://docs.microsoft.com/windows/mixed-reality/kippysescape). 
+Kippy the robot wakes up to find itself stranded on an island… and it's up to you to solve a series of puzzles and help it find a path to its rocket ship! Kippy's Escape is an open source sample app for HoloLens 2, built with Unreal Engine and Mixed Reality [UX Tools for Unreal](https://aka.ms/uxt-unreal). Kippy's Escape is available for download to a HoloLens 2 device from the [Microsoft Store](https://www.microsoft.com/p/kippys-escape/9nbd7gl86vkd). To learn more about the making of Kippy's Escape, check out this [article](https://aka.ms/KippysEscape). 
 
 Supported Unreal versions | Supported device | Built with UXT version
 :-----------------: | :----------------: | :----------------------:
