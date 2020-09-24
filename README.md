@@ -21,6 +21,10 @@ Open up KippysEscape.uproject in Unreal Engine 4.25 or later.
 
 ![gems](Images/KE-Gems.gif)
 
+# More Samples
+
+Visit the [Mixed Reality Unreal Samples repository](https://github.com/microsoft/MixedReality-Unreal-Samples) to see a list of all of Microsoft's open source mixed reality sample projects built with Unreal Engine.
+
 # Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
