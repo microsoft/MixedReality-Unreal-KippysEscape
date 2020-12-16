@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.25",
+	"EngineAssociation": "{CAFBA093-444E-F5CC-BAB5-5C8B5A14058D}",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -15,7 +15,6 @@
 			"Name": "HoloLensAR",
 			"Enabled": true,
 			"SupportedTargetPlatforms": [
-				"HoloLens",
 				"Win64"
 			]
 		},
@@ -34,6 +33,10 @@
 				"HoloLens",
 				"Win64"
 			]
+		},
+		{
+			"Name": "EditorScriptingUtilities",
+			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [
