@@ -12,16 +12,17 @@
 
 FTransform UUxtFunctionLibrary::GetHeadPose(UObject* WorldContextObject)
 {
-	APlayerCameraManager* CameraManager = UGameplayStatics::GetPlayerCameraManager(WorldContextObject, 0);
-	if (CameraManager)
-	{
-		USceneComponent* TransformComp = CameraManager->GetTransformComponent();
-		if (TransformComp)
-		{
-			return TransformComp->GetComponentTransform();
-		}
-	}
-	return FTransform::Identity;
+	FRotator Rotation;
+	FVector Position;
+	UHeadMountedDisplayFunctionLibrary::GetOrientationAndPosition(Rotation, Position);
+
+	FTransform TrackingSpaceTransform(Rotation, Position);
+	FTransform TrackingToWorld = UHeadMountedDisplayFunctionLibrary::GetTrackingToWorldTransform(WorldContextObject);
+
+	FTransform Result;
+	FTransform::Multiply(&Result, &TrackingSpaceTransform, &TrackingToWorld);
+
+	return Result;
 }
 
 bool UUxtFunctionLibrary::IsInEditor()
@@ -34,4 +35,29 @@ bool UUxtFunctionLibrary::IsInEditor()
 	}
 #endif
 	return false;
+}
+
+
+USceneComponent* UUxtFunctionLibrary::GetSceneComponentFromReference(const FComponentReference& ComponentRef, const AActor* Owner)
+{
+	if (ComponentRef.ComponentProperty != NAME_None)
+	{
+		// FComponentReference::GetComponent() doesn't seem to find the component if it's not part of the inherited blueprint.
+		const AActor* Actor = ComponentRef.OtherActor ? ComponentRef.OtherActor : Owner;
+		const TSet<UActorComponent*>& Components = Actor->GetComponents();
+
+		for (UActorComponent* Component : Components)
+		{
+			if (Component->GetFName() == ComponentRef.ComponentProperty)
+			{
+				USceneComponent* SceneComponent = Cast<USceneComponent>(Component);
+				if (SceneComponent)
+				{
+					return SceneComponent;
+				}
+			}
+		}
+	}
+
+	return nullptr;
 }
