@@ -4,14 +4,14 @@ Kippy the robot wakes up to find itself stranded on an island… and it's up to 
 
 Supported Unreal versions | Supported device | Built with UXT version
 :-----------------: | :----------------: | :----------------------:
-Unreal Engine 4.25+ | HoloLens 2 | 0.9
+Unreal Engine 4.26+ | HoloLens 2 | 0.9
 
 
 ![bridge](Images/Bridge.gif)
 
 ## How to run the app
 
-Open up KippysEscape.uproject in Unreal Engine 4.25 or later. 
+Open up KippysEscape.uproject in Unreal Engine 4.26 or later. 
 
 * To run the experience in-editor, select "Selected Viewport" as the Active Play Mode and press play. Two blue hands will come up that allow you to simulate hand input in the editor. Learn more about the input simulation controls provided by the UX Tools plugin [here](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/InputSimulation.html). 
 
