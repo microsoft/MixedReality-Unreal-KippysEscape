@@ -1,15 +1,46 @@
+---
+page_type: sample
+name: Kippy's Escape
+description: An open source sample app for HoloLens 2, built with Unreal Engine and Mixed Reality UX Tools for Unreal
+languages:
+- cpp
+products:
+- windows-mixed-reality
+- hololens
+---
+
 # Kippy's Escape
 
-Kippy the robot wakes up to find itself stranded on an island… and it's up to you to solve a series of puzzles and help it find a path to its rocket ship! Kippy's Escape is an open source sample app for HoloLens 2, built with Unreal Engine and Mixed Reality [UX Tools for Unreal](https://aka.ms/uxt-unreal). Kippy's Escape is available for download to a HoloLens 2 device from the [Microsoft Store](https://www.microsoft.com/p/kippys-escape/9nbd7gl86vkd). To learn more about the making of Kippy's Escape, check out this [article](https://aka.ms/KippysEscape). 
+![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 Supported Unreal versions | Supported device | Built with UXT version
 :-----------------: | :----------------: | :----------------------:
 Unreal Engine 4.26+ | HoloLens 2 | 0.9
 
+Kippy the robot wakes up to find itself stranded on an island… and it's up to you to solve a series of puzzles and help it find a path to its rocket ship! Kippy's Escape is an open source sample app for HoloLens 2, built with Unreal Engine and Mixed Reality [UX Tools for Unreal](https://aka.ms/uxt-unreal). Kippy's Escape is available for download to a HoloLens 2 device from the [Microsoft Store](https://www.microsoft.com/p/kippys-escape/9nbd7gl86vkd). To learn more about the making of Kippy's Escape, check out this [article](https://aka.ms/KippysEscape). 
 
 ![bridge](Images/Bridge.gif)
 
-## How to run the app
+## Contents
+
+| File/folder | Description |
+|-------------|-------------|
+| `Config` | HoloLens and default configuration files. |
+| `Content` | Project files and assets. |
+| `Source` | Mixed Reality Toolkit for Unreal UX Tools plugin components. |
+| `images` | Image assets for the README. |
+| `.gitignore` | Define what to ignore at commit time. |
+| `HL2Collab.sln` | Project solution file. |
+| `HL2Collab.uproject` | Unreal Engine project file. |
+| `README.md` | This README file. |
+
+## Prerequisites
+
+## Setup
+
+1. Clone or download this sample repository
+
+## Running the app
 
 Open up KippysEscape.uproject in Unreal Engine 4.26 or later. 
 
@@ -21,7 +52,9 @@ Open up KippysEscape.uproject in Unreal Engine 4.26 or later.
 
 ![gems](Images/KE-Gems.gif)
 
-# More Samples
+## Key concepts
+
+# See also
 
 Visit the [Mixed Reality Unreal Samples repository](https://github.com/microsoft/MixedReality-Unreal-Samples) to see a list of all of Microsoft's open source mixed reality sample projects built with Unreal Engine.
 
