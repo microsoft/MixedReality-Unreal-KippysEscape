@@ -40,8 +40,11 @@ Kippy the robot wakes up to find itself stranded on an island… and it's up to 
 
 ## Prerequisites
 
-* Install the correct [Window version, Unreal Engine, and have your HoloLens 2 configured for deployment](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/tutorials/unreal-uxt-ch1#prerequisites) downloaded and installed
-* [Visual Studio 2019 with the required packages](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/tutorials/unreal-uxt-ch1#installing-visual-studio-2019)
+* Windows 10 1809 or later
+* Windows 10 SDK 10.0.18362.0 or later
+* [Unreal Engine](https://www.unrealengine.com/download) 4.26 or later
+* Microsoft HoloLens 2 device [configured for development](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio#enabling-developer-mode) or [Emulator](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator#hololens-2-emulator-overview)
+* [Visual Studio 2019 with the required workloads](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/tutorials/unreal-uxt-ch1#installing-visual-studio-2019)
 
 ## Setup
 
